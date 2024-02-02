@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     list-style: none;
+    font-size: 15px;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(182, 182, 182);
 }
 
 .navbar {
@@ -24,8 +25,6 @@ body {
 .navbar-brand {
     padding-right: 25px;
     margin: 0;
-    display: flex;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -39,17 +38,16 @@ body {
     transform: scale(1.1);
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-}
-
 .nav-link {
+    font-size: 18px;
     padding-left: 5px;
     color: blanchedalmond;
     list-style: none;
     padding: 20px;
+}
+
+.nav-link:hover {
+    color: #EDCB78;
 }
 
 .nav-item {
@@ -66,12 +64,6 @@ body {
     transition: all 0.3s;
 }
 
-.nav-link a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-}
-
 .navbar-toggler {
     background-color: #EDCB78;
 }
@@ -79,27 +71,30 @@ body {
 /* footer */
 
 .footer {
+    height: max-content;
     background-color: #012B28;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .footer-list {
-    padding: 20px 50px;
+    padding: 10px 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-links {
-    display: inline-block;
     height: 190px;
     width: 25%;
-    padding: 0 15px;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    padding: 0;
 }
 
 .footer-links h4 {
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
+    color: blanchedalmond;
     margin-bottom: 25px;
     font-weight: 500px;
     border-bottom: 2px solid #EDCB78;
@@ -107,10 +102,11 @@ body {
 }
 
 .footer-links ul li a {
+    border-left: #EDCB78;
     font-size: 18px;
     text-decoration: none;
-    color: white;
-    display: inline-block;
+    color: blanchedalmond;
+    display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
 }
@@ -126,8 +122,64 @@ body {
     width: 40px;
     background-color: #EDCB78;
     margin: 0 10px 10px 0;
+    align-items: center;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     color: #012B28;
 }
+
+    /* cards inicio */
+
+.tarjeta-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tarjeta-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.tarjeta {
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .tarjeta-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+}
+
