@@ -10,20 +10,29 @@
 }
 
 body {
-    background-color: rgb(182, 182, 182);
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.container-fluid {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar {
     background-color: #012B28;
     color: #EDCB78;
+    width: 100%;
     height: 120px auto;
     padding: 10px 20%;
-    position: sticky;
     top: 0;
+    border-bottom: 5px solid #EDCB78;
 }
 
 .navbar-brand {
-    padding-right: 25px;
+    padding: 0 20px;
     margin: 0;
     cursor: pointer;
 }
@@ -66,11 +75,13 @@ body {
 
 .navbar-toggler {
     background-color: #EDCB78;
+    margin: 20px;
 }
 
 /* footer */
 
 .footer {
+    border-top: 5px solid #EDCB78;
     height: max-content;
     background-color: #012B28;
     padding: 50px 0;
@@ -129,20 +140,57 @@ body {
     color: #012B28;
 }
 
-    /* cards inicio */
+/* contenido de inicio */
 
-.tarjeta-container {
+.logo {
+    background-image: url(../assets/img/kostiantyn-li-ZuvfylQc-OQ-unsplash.jpg);
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    border-bottom: solid;
+    border-top-style: none;
+}
+
+.logo .logo-image img {
+    background-color: rgba(235, 180, 44, 60%);
+    padding: 60px;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #EDCB78;
+    margin: 20px;
+    border-style: solid;
+    border-color: #012B28;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.container-text p {
+    font-size: 20px;
+}
+
+.container-tarjeta {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
-.tarjeta-container img {
+.container-tarjeta img {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .tarjeta {
@@ -150,10 +198,96 @@ body {
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    border-radius: 10px;
 }
 
-@media screen and (min-width:300px) and (max-width:991px) {
-    .tarjeta-container {
+/* pagina de contacto */
+
+.form {
+    margin: 30px 0;
+    padding: 10px 50px 20px 50px;
+    background-color: #012B28;
+    color: blanchedalmond;
+    border-radius: 15px;
+    border-color: #EDCB78;
+    border-style: solid;
+    text-align: center;
+}
+
+.form label {
+    font-size: 18px;
+}
+
+.form button {
+    background-color: #EDCB78;
+    color: #012B28;
+    border-color: #012B28;
+}
+
+.form button:hover {
+    background-color: #012B28;
+    color: #EDCB78;
+    border-color: #EDCB78;
+}
+
+.map {
+    margin: 30px 0;
+    padding: 10px 50px 20px 50px;
+    background-color: #012B28;
+    color: blanchedalmond;
+    border-radius: 15px;
+    border-color: #EDCB78;
+    border-style: solid;
+    text-align: center;    
+}
+
+.map iframe {
+    border-radius: 2%;
+}
+
+/* pagina de servicios */
+
+.servicios {
+    background-image: url(../assets/img/kostiantyn-li-ZuvfylQc-OQ-unsplash.jpg);
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 40px 80px;
+    width: auto;
+    border-left: 5px solid #012B28;
+    border-right: 5px solid #012B28;
+}
+.servicios-card {
+    font-size: 50px;
+    height: 300px;
+    margin: 20px 0;
+    background-color: #012B28;
+    color: blanchedalmond;
+    border-style: double;
+    border-color: #EDCB78;
+    padding: 20px 10px;
+}
+
+.servicios-card img {
+    height: 60px;
+    width: auto;
+}
+
+/* media queries */
+
+@media screen and (min-width:379px) and (max-width:991px) {
+
+    .logo {
+        height: 100%;
+    }
+
+    .logo .logo-image img {
+        padding: 5%;
+        height: auto;
+        width: 100%;
+    }
+
+    .container-tarjeta {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -174,12 +308,36 @@ body {
         margin-bottom: 40px;
     }
 
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar-brand {
+        padding: 10px 0;
+    }
+
     .nav-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         border: none;
     }
-}
 
+    .nav-link {
+        padding: 0%;
+        border: none;
+    }
+
+    .form {
+        padding: 10px 5px;
+    }
+
+    .map {
+        padding: 10px 5px;
+    }
+
+    .servicios {
+        padding: 40px;
+    }
+}

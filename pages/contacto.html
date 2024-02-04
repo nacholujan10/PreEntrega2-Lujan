@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header bg-info-subtle">
+    <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="../assets/img/logoAmarillo.png"
@@ -44,6 +44,78 @@
             </div>
         </nav>
     </header>
+
+    <main class="container-fluid">
+        <section class="container">
+            <form class="form row g-3">
+                <h2>Contactanos</h2>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="formGroupExampleInput" class="form-label">Nombre/s</label>
+                    <input type="text" class="form-control" placeholder="Escriba su nombre" aria-label="First name">
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="formGroupExampleInput2" class="form-label">Apellido/s</label>
+                    <input type="text" class="form-control" placeholder="Escriba su apellido" aria-label="Last name">
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4"
+                        placeholder="Escriba su direccion de correo electrónico">
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Escriba su dirección">
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Escriba su ciudad">
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="inputState" class="form-label">Provincia</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
+                        <option>Buenos Aires</option>
+                        <option>CABA</option>
+                        <option>Catamarca</option>
+                        <option>Chubut</option>
+                        <option>Córdoba</option>
+                        <option>Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-xl-12">
+                    <label for="input">Comentarios</label>
+                    <textarea class="form-control" placeholder="Su comentario aquí..." style="height: 100px"></textarea>
+                </div>
+                <div class="col-sm-12 col-xl-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <div class="map row g-4">
+                <h2>Donde Estamos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6640.723664070168!2d-65.46673867247596!3d-33.67369392807622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1704700448271!5m2!1ses-419!2sar"
+                    width="450" height="392" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">ubicacion</iframe>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="contenedor">
