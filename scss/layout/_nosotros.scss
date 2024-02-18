@@ -1,0 +1,15 @@
+/* pagina de nosotros */
+
+.carousel-inner {
+    .carousel-item {
+        img {
+            object-fit: scale-down;
+            height: 70vh;
+            width: 100%;
+        }
+        p {
+            align-self: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/* pagina de contacto */
+
+.formulario {
+    background-image: url(../assets/img/kostiantyn-li-ZuvfylQc-OQ-unsplash.jpg);
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 40px 80px;
+    width: auto;
+    border-left: 5px solid #012B28;
+    border-right: 5px solid #012B28;
+
+    .form {
+        margin: 30px 0;
+        padding: 10px 50px 20px 50px;
+        background-color: #012B28;
+        color: blanchedalmond;
+        border-radius: 15px;
+        border-color: #EDCB78;
+        border-style: solid;
+        text-align: center;
+
+        label {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #EDCB78;
+            color: #012B28;
+            border-color: #012B28;
+
+            &:hover {
+                background-color: #012B28;
+                color: #EDCB78;
+                border-color: #EDCB78;
+            }
+        }
+    }
+}
+
+.formulario .map {
+    margin: 30px 0;
+    padding: 10px 50px 20px 50px;
+    background-color: #012B28;
+    color: blanchedalmond;
+    border-radius: 15px;
+    border-color: #EDCB78;
+    border-style: solid;
+    text-align: center;
+
+    iframe {
+        border-radius: 2%;
+    }
+}

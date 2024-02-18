@@ -1,0 +1,28 @@
+/* pagina de servicios */
+
+.servicios {
+    background-image: url(../assets/img/kostiantyn-li-ZuvfylQc-OQ-unsplash.jpg);
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 40px 80px;
+    width: auto;
+    border-left: 5px solid #012B28;
+    border-right: 5px solid #012B28;
+
+    .servicios-card {
+        font-size: 50px;
+        height: 300px;
+        margin: 20px 0;
+        background-color: #012B28;
+        color: blanchedalmond;
+        border-style: double;
+        border-color: #EDCB78;
+        padding: 20px 10px;
+
+        img {
+            height: 60px;
+            width: auto;
+        }
+    }
+}
