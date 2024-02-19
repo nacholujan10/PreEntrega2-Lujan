@@ -8,3 +8,12 @@
     list-style: none;
     font-size: 15px;
 }
+
+body {
+    background-color: $mainColor;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}

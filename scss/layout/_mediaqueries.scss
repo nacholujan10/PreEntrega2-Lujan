@@ -1,31 +1,202 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
-@media (min-width: 0px) and (max-widht: 575px) {
 
+@media (min-width: 380px) and (max-width: 575px) {
+
+    .navbar {
+        .container-fluid {
+            height: auto;
+            width: 300px auto;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .navbar-brand {
+                padding: 0;
+            }
+        }
+
+        .navbar-nav {
+            padding: 5px 20px;
+            margin-bottom: 0;
+
+            .nav-item {
+                align-items: center;
+                justify-content: center;
+                border-right-style: none;
+
+                .nav-link {
+                    padding-left: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .footer-links {
+            height: auto;
+            width: 100%;
+            padding: 20px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .container-tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-content: normal;
+        flex-wrap: nowrap;
+    }
 }
+
+
+
+
 
 // Small devices (landscape phones, 576px and up) sm
-@media (min-width: 576px) {
 
+@media (min-width: 576px) and (max-width: 767px) {
+    .md-section {
+        width: 70%;
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .footer-links {
+            height: auto;
+            width: 100%;
+            padding: 20px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .container-tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-content: normal;
+        flex-wrap: nowrap;
+    }
+
+    .navbar {
+        .container-fluid {
+            height: auto;
+            width: 300px auto;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            .navbar-brand {
+                padding: 0;
+            }
+        }
+    
+        .navbar-nav {
+            padding: 5px 20px;
+            margin-bottom: 0;
+    
+            .nav-item {
+                align-items: center;
+                justify-content: center;
+                border-right-style: none;
+                margin: 7px 0;
+    
+                .nav-link {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
 }
 
+
+
+
 // Medium devices (tablets, 768px and up) md
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .md-section {
+        width: 40%;
+    }
+
+    .navbar {
+        .container-fluid {
+            height: auto;
+            width: 300px auto;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            .navbar-brand {
+                padding: 0;
+            }
+        }
+    
+        .navbar-nav {
+            padding: 5px 20px;
+            margin-bottom: 0;
+    
+            .nav-item {
+                align-items: center;
+                justify-content: center;
+                border-right-style: none;
+                margin: 10px 0;
+    
+                .nav-link {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .footer-links {
+            height: auto;
+            width: 100%;
+            padding: 20px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
 
 }
 
 // Large devices (desktops, 992px and up) lg
 @media (min-width: 992px) {
 
-}
-
-// X-Large devices (large desktops, 1200px and up) xl
-@media (min-width: 1200px) {
-
-}
-
-// XX-Large devices (larger desktops, 1400px and up) xxl
-@media (min-width: 1400px) {
-
+    .md-section {
+        width: 40%;
+    }
 }

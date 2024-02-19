@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;700&display=swap');
 
 // BASE
-
-@import "base/reset.scss";
 @import "base/vars.scss";
+@import "base/reset.scss";
 @import "base/utils.scss";
 
 // COMPONENTS
@@ -12,12 +11,12 @@
 @import "components/navbar.scss";
 
 // LAYOUTS
-
 @import "layout/contacto.scss";
 @import "layout/index.scss";
 @import "layout/nosotros.scss";
 @import "layout/servicios.scss";
 @import "layout/propiedades.scss";
+@import "layout/mediaqueries";
 
 
 

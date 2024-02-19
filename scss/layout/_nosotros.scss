@@ -1,15 +1,24 @@
 /* pagina de nosotros */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.md-section {
+    width: 100%;
+}
 
 .carousel-inner {
+
     .carousel-item {
         img {
-            object-fit: scale-down;
+            background-position: 0 center;
+            background-repeat: repeat-x;
+            background-size: cover;
+            object-fit: cover;
             height: 70vh;
             width: 100%;
-        }
-        p {
-            align-self: center;
-            justify-content: center;
         }
     }
 }

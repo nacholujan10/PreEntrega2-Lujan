@@ -1,14 +1,13 @@
 /* contenido de inicio */
 
 .logo {
-    background-image: url(../assets/img/kostiantyn-li-ZuvfylQc-OQ-unsplash.jpg);
+    background-image: url("../../assets/img/fondosembrado.jpg");
     background-position: 0 center;
     background-repeat: repeat-x;
     background-size: cover;
     justify-content: left;
     align-items: center;
     display: flex;
-    border-bottom: solid;
     border-top-style: none;
 
     .logo-image {
@@ -34,13 +33,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #EDCB78;
-    margin: 20px;
+    margin: 30px 20px;
     border-style: solid;
-    border-color: #012B28;
-    padding: 10px 10px;
+    border-color: $mainColor;
+    padding: 30px 10px;
     border-radius: 10px;
 
-    .container-text p {
+    p {
         font-size: 20px;
     }
 }
