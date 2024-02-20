@@ -2,9 +2,13 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 
-@media (min-width: 380px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575px) {
+
+    // navbar y footer
 
     .navbar {
+        padding: 30px;
+
         .container-fluid {
             height: auto;
             width: 300px auto;
@@ -15,6 +19,10 @@
 
             .navbar-brand {
                 padding: 0;
+            }
+
+            .navbar-toggler {
+                margin: 0;
             }
         }
 
@@ -54,15 +62,66 @@
         }
     }
 
+    // index
+
+    .logo {
+        .logo-image {
+            img {
+                padding: 10px;
+            }
+        }
+    }
+    
+
+    
+
     .container-tarjeta {
         display: flex;
         flex-direction: column;
-        align-content: normal;
+        align-content: center;
         flex-wrap: nowrap;
+
+        .tarjeta {
+            margin: 30px;
+            height: 50%;
+            width: auto;
+        }
+
+    }
+
+    // propiedades
+    
+    .container-fluid {
+        .grid-container{
+            padding: auto;
+            grid-template-columns: repeat(1, 2fr);
+
+            .card-prop {
+                margin: 20px 5px;
+                padding: 10px;
+                height: fit-content;
+
+                .card-prop-text {   
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                }
+                
+            }
+        }
     }
 }
 
+// servicios
 
+.container-fluid {
+    .container {
+        .servicios {
+            padding: 40px 20px;
+        }
+    }
+}
 
 
 
@@ -107,22 +166,22 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-    
+
             .navbar-brand {
                 padding: 0;
             }
         }
-    
+
         .navbar-nav {
             padding: 5px 20px;
             margin-bottom: 0;
-    
+
             .nav-item {
                 align-items: center;
                 justify-content: center;
                 border-right-style: none;
                 margin: 7px 0;
-    
+
                 .nav-link {
                     font-size: 21px;
                 }
@@ -148,22 +207,22 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-    
+
             .navbar-brand {
                 padding: 0;
             }
         }
-    
+
         .navbar-nav {
             padding: 5px 20px;
             margin-bottom: 0;
-    
+
             .nav-item {
                 align-items: center;
                 justify-content: center;
                 border-right-style: none;
                 margin: 10px 0;
-    
+
                 .nav-link {
                     font-size: 24px;
                 }

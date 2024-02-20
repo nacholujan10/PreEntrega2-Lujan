@@ -1,9 +1,9 @@
 /* footer */
 
 .footer {
-    border-top: 5px solid #EDCB78;
+    border-top: 5px solid $borderColor;
     height: max-content;
-    background-color: #012B28;
+    background-color: $navFotColor;
     padding: 50px 0;
 }
 
@@ -27,12 +27,12 @@
         color: blanchedalmond;
         margin-bottom: 25px;
         font-weight: 500px;
-        border-bottom: 2px solid #EDCB78;
+        border-bottom: 2px solid $borderColor;
         padding-bottom: 10px;
     }
 
     ul li a {
-        border-left: #EDCB78;
+        border-left: $borderColor;
         font-size: 18px;
         text-decoration: none;
         color: blanchedalmond;
@@ -41,7 +41,7 @@
         transition: all .3s ease;
 
         &:hover {
-            color: #EDCB78;
+            color: $borderColor;
             padding-left: 4px;
         }
     }
@@ -52,7 +52,7 @@
         display: inline-block;
         min-height: 40px;
         width: 40px;
-        background-color: #EDCB78;
+        background-color: $borderColor;
         margin: 0 10px 10px 0;
         align-items: center;
         text-align: center;

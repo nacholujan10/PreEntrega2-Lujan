@@ -10,8 +10,9 @@
 }
 
 .carousel-inner {
-
+    padding: 40px 0;
     .carousel-item {
+
         img {
             background-position: 0 center;
             background-repeat: repeat-x;
@@ -19,6 +20,24 @@
             object-fit: cover;
             height: 70vh;
             width: 100%;
+            border: 5px solid $mainColor;
+        }
+
+        .carousel-caption {
+            padding: 10px;
+            background-color: $mainColor;
+            border-radius: 8px;
+            border: 2px solid $borderColor;
+
+            h5 {
+                color: $fontColor;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $borderColor;
+            }
+
+            p {
+                color: $fontColor;
+            }
         }
     }
 }

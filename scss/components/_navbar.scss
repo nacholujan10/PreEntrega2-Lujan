@@ -1,12 +1,12 @@
 /* navbar */
 
 .navbar {
-    background-color: #012B28;
-    color: #EDCB78;
+    background-color: $navFotColor;
+    color: $borderColor;
     width: 100%;
     height: 130px auto;
     padding: 10px 20%;
-    border-bottom: 5px solid #EDCB78;
+    border-bottom: 5px solid $borderColor;
 
     .navbar-brand {
         padding: 0 10px;
@@ -32,7 +32,7 @@
             height: 10px;
             width: auto;
             border-right-style: solid;
-            border-right-color: #EDCB78;
+            border-right-color: $borderColor;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -43,12 +43,12 @@
             .nav-link {
                 font-size: 18px;
                 padding-left: 5px;
-                color: blanchedalmond;
+                color: $fontColor;
                 list-style: none;
                 padding: 20px 5px;
 
                 &:hover {
-                    color: #EDCB78;
+                    color: $borderColor;
                 }
             }
         }
@@ -56,7 +56,7 @@
     }
 
     .navbar-toggler {
-        background-color: #EDCB78;
+        background-color: $borderColor;
         margin: 20px;
     }
 }

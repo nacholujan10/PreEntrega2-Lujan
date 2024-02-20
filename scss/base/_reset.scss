@@ -10,7 +10,8 @@
 }
 
 body {
-    background-color: $mainColor;
+    background: rgb(1,43,43);
+background: linear-gradient(180deg, rgba(1,43,43,1) 0%, rgba(155,155,122,1) 52%);
 }
 
 .container-fluid {

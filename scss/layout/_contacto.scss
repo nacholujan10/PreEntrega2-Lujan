@@ -11,9 +11,9 @@
         margin: 30px 0;
         padding: 10px 50px 20px 50px;
         background-color: $navFotColor;
-        color: blanchedalmond;
+        color: $fontColor;
         border-radius: 15px;
-        border-color: #EDCB78;
+        border-color: $borderColor;
         border-style: solid;
         text-align: center;
 
@@ -22,14 +22,15 @@
         }
 
         button {
-            background-color: #EDCB78;
+            font-size: 18px;
+            background-color: $borderColor;
             color: $mainColor;
             border-color: $mainColor;
 
             &:hover {
                 background-color: $mainColor;
-                color: #EDCB78;
-                border-color: #EDCB78;
+                color: $borderColor;
+                border-color: $borderColor;
             }
         }
     }
@@ -39,9 +40,9 @@
     margin: 30px 0;
     padding: 10px 50px 20px 50px;
     background-color: $navFotColor;
-    color: blanchedalmond;
+    color: $fontColor;
     border-radius: 15px;
-    border-color: #EDCB78;
+    border-color: $borderColor;
     border-style: solid;
     text-align: center;
 
