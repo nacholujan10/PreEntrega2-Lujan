@@ -146,6 +146,10 @@ body {
   border-style: solid;
   text-align: center;
 }
+.formulario .form h2 {
+  border-bottom: solid 2px #EDCB78;
+  padding-bottom: 20px;
+}
 .formulario .form label {
   font-size: 18px;
 }
@@ -170,6 +174,10 @@ body {
   border-color: #EDCB78;
   border-style: solid;
   text-align: center;
+}
+.formulario .map h2 {
+  border-bottom: 2px solid #EDCB78;
+  padding-bottom: 20px;
 }
 .formulario .map iframe {
   border-radius: 2%;
@@ -266,6 +274,20 @@ body {
   border-radius: 10px;
 }
 
+.logo-contenedor {
+  background-color: #012B28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.logo-contenedor img {
+  position: relative;
+  width: 100% auto;
+  padding: 50px;
+  border: 5px outset #EDCB78;
+}
+
 /* pagina de nosotros */
 .carousel {
   display: flex;
@@ -318,52 +340,70 @@ body {
 }
 .servicios .servicios-card {
   font-size: 50px;
-  height: 300px;
   margin: 20px 0;
   background-color: #012B28;
   color: blanchedalmond;
   border-style: solid;
   border-color: #f3c552;
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
-.servicios .servicios-card img {
-  height: 60px;
-  width: auto;
+.servicios .servicios-card h2 {
+  color: white;
+  padding: 20px 0;
+  border-bottom: 3px solid #EDCB78;
+}
+.servicios .servicios-card p {
+  padding: 20px 0;
+  font-size: 17px;
 }
 
 /* pagina de propiedades en grid system */
-.grid-container {
+.flex-container {
   width: 80%;
   margin: 0 auto;
   background-color: #fff8dc;
   padding: 10px;
   border: 5px solid #EDCB78;
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.grid-container .card-prop {
-  padding: 5px;
-  height: 80%;
-  width: 325px auto;
+.flex-container .card-prop {
+  margin: 30px;
+  padding: 20px;
+  max-height: 505px;
+  width: 350px;
   background-color: #012B28;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.2);
   margin: 20px;
+  border: 5px solid black;
+  transition: all 0.3s;
 }
-.grid-container .card-prop img {
+.flex-container .card-prop:hover {
+  transform: scale(1.1);
+}
+.flex-container .card-prop img {
+  position: relative;
+  min-height: 175px;
+  overflow: hidden;
   width: 100%;
-  height: auto;
+  border: 2px solid #EDCB78;
+  border-radius: 7px;
 }
-.grid-container .card-prop .card-prop-text {
-  padding: 16px;
-}
-.grid-container .card-prop .card-prop-text h3 {
+.flex-container .card-prop .card-prop-text h3 {
+  padding: 15px 0;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #EDCB78;
   color: #fff8dc;
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
-.grid-container .card-prop .card-prop-text p {
+.flex-container .card-prop .card-prop-text p {
   color: #fff8dc;
   font-size: 15px;
   line-height: 1.3;
@@ -397,8 +437,11 @@ body {
     border-right-style: none;
   }
   .navbar .navbar-nav .nav-item .nav-link {
-    padding-left: 0;
+    padding-bottom: 5px;
     font-size: 18px;
+    border-bottom: 2px solid #EDCB78;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .footer-list {
     width: 100%;
@@ -436,6 +479,10 @@ body {
   .container-tarjeta .tarjeta img {
     width: 100% auto;
   }
+  .logo-contenedor img {
+    min-width: 100px;
+    border: none;
+  }
   .container-fluid .grid-container {
     padding: auto;
     grid-template-columns: repeat(1, 2fr);
@@ -448,11 +495,25 @@ body {
   .container-fluid .grid-container .card-prop .card-prop-text h3 {
     font-size: 25px;
   }
+  .container-fluid .container .servicios {
+    padding: 40px 20px;
+  }
+  .formulario {
+    padding: 30px 10px;
+    margin: 5px;
+  }
+  .formulario .form {
+    margin: 5px;
+    padding: 10px;
+  }
+  .flex-container {
+    width: 100%;
+    padding: 0;
+  }
+  .flex-container .card-prop img {
+    min-height: 0;
+  }
 }
-.container-fluid .container .servicios {
-  padding: 40px 20px;
-}
-
 @media (min-width: 576px) and (max-width: 767px) {
   .md-section {
     width: 70%;
@@ -510,13 +571,29 @@ body {
     margin: 7px 0;
   }
   .navbar .navbar-nav .nav-item .nav-link {
+    padding-bottom: 5px;
     font-size: 21px;
+    border-bottom: 2px solid #EDCB78;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .logo .logo-image img {
     background: rgb(237, 203, 120);
     background: linear-gradient(180deg, rgb(237, 203, 120) 0%, rgb(255, 255, 255) 100%);
     padding: 50px 50px;
     border-radius: 0;
+  }
+  .logo-contenedor img {
+    min-width: 100px;
+    border: none;
+  }
+  .formulario {
+    padding: 30px 10px;
+    margin: auto;
+  }
+  .formulario .form {
+    margin: 5px;
+    padding: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -545,6 +622,10 @@ body {
     margin: 10px 0;
   }
   .navbar .navbar-nav .nav-item .nav-link {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #EDCB78;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     font-size: 24px;
   }
   .footer-list {
@@ -568,6 +649,10 @@ body {
     background: linear-gradient(180deg, rgb(237, 203, 120) 0%, rgb(255, 255, 255) 100%);
     padding: 50px 100px;
     border-radius: 0;
+  }
+  .logo-contenedor img {
+    min-width: 100px;
+    border: none;
   }
 }
 @media (min-width: 992px) {
