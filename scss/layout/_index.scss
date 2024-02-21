@@ -1,11 +1,11 @@
 /* contenido de inicio */
 
 .logo {
-    background-image: url("../assets/img/camposembrado.jpg");
+    background-image: url("https://res.cloudinary.com/disbfzk52/image/upload/v1708473448/camposembrado_qvyrsz.jpg");
     background-position: 0 center;
     background-repeat: repeat-x;
     background-size: cover;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     display: flex;
     border-top-style: none;
@@ -13,36 +13,65 @@
 
     .logo-image {
         img {
-            background-color: rgba(235, 180, 44,);
-            background: linear-gradient(90deg, rgba(235, 180, 44,) 0%, rgba(171,171,124,1) 100%);
-            padding: 60px;
+            background: rgba(237, 203, 120, 1);
+            background: radial-gradient(circle, rgba(237, 203, 120, 1) 0%, rgba(241, 222, 151, 1) 20%, rgba(241, 222, 151, 1) 40%, rgba(241, 222, 151, 0.7511379551820728) 60%, rgba(241, 222, 151, 0) 80%, rgba(241, 222, 151, 0) 100%);
+            padding: 100px 200px;
+            border-radius: 10% / 50%;
+        }
+    }
+}
+
+.descripcion {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .descripcion-section {
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        margin: 30px 0;
+
+        .container-text {
+            background: rgb(1, 43, 40);
+            color: blanchedalmond;
+            text-shadow: 0px 4px 4px black;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 30px 20px;
+            border-style: solid;
+            border-color: $borderColor;
+            padding: 0 10px;
+            border-radius: 10px;
+
+            h1 {
+                padding: 20px 0;
+                border-bottom: 3px solid $borderColor;
+            }
+
+            h2 {
+                padding: 20px 0;
+                border-bottom: 3px solid $borderColor;
+            }
+
+            p {
+                padding: 20px 0;
+                font-size: 20px;
+                color: #fff;
+            }
         }
     }
 }
 
 
 
-.container-text {
-    background: rgb(1,43,40);
-background: radial-gradient(circle, rgba(1,43,40,0.7707457983193278) 33%, rgba(237,203,120,1) 100%);
-    color: blanchedalmond;
-    text-shadow: 0px 4px 4px black;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 30px 20px;
-    border-style: solid;
-    border-color: $borderColor;
-    padding: 30px 10px;
-    border-radius: 10px;
 
-    p {
-        font-size: 20px;
-        color: #fff;
-    }
-}
+
 
 
 

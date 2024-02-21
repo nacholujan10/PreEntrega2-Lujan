@@ -67,14 +67,14 @@
     .logo {
         .logo-image {
             img {
-                padding: 10px;
+                background: rgb(237,203,120);
+background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                padding: 20px 10px;
+                border-radius: 0
             }
         }
     }
     
-
-    
-
     .container-tarjeta {
         display: flex;
         flex-direction: column;
@@ -188,6 +188,20 @@
             }
         }
     }
+
+    // index
+
+    .logo {
+        .logo-image {
+            img {
+                background: rgb(237,203,120);
+background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                padding: 50px 50px;
+                border-radius: 0
+            }
+        }
+    }
+    
 }
 
 
@@ -249,6 +263,18 @@
         }
     }
 
+    // index
+
+    .logo {
+        .logo-image {
+            img {
+                background: rgb(237,203,120);
+background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                padding: 50px 100px;
+                border-radius: 0
+            }
+        }
+    }
 
 }
 

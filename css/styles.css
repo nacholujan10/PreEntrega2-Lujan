@@ -177,25 +177,38 @@ body {
 
 /* contenido de inicio */
 .logo {
-  background-image: url("../assets/img/camposembrado.jpg");
+  background-image: url("https://res.cloudinary.com/disbfzk52/image/upload/v1708473448/camposembrado_qvyrsz.jpg");
   background-position: 0 center;
   background-repeat: repeat-x;
   background-size: cover;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   display: flex;
   border-top-style: none;
   border-bottom: 4px solid #EDCB78;
 }
 .logo .logo-image img {
-  background-color: rgb(235, 180, 44);
-  background: linear-gradient(90deg, rgb(235, 180, 44) 0%, rgb(171, 171, 124) 100%);
-  padding: 60px;
+  background: rgb(237, 203, 120);
+  background: radial-gradient(circle, rgb(237, 203, 120) 0%, rgb(241, 222, 151) 20%, rgb(241, 222, 151) 40%, rgba(241, 222, 151, 0.7511379552) 60%, rgba(241, 222, 151, 0) 80%, rgba(241, 222, 151, 0) 100%);
+  padding: 100px 200px;
+  border-radius: 10%/50%;
 }
 
-.container-text {
+.descripcion {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.descripcion .descripcion-section {
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+.descripcion .descripcion-section .container-text {
   background: rgb(1, 43, 40);
-  background: radial-gradient(circle, rgba(1, 43, 40, 0.7707457983) 33%, rgb(237, 203, 120) 100%);
   color: blanchedalmond;
   text-shadow: 0px 4px 4px black;
   display: flex;
@@ -206,10 +219,19 @@ body {
   margin: 30px 20px;
   border-style: solid;
   border-color: #EDCB78;
-  padding: 30px 10px;
+  padding: 0 10px;
   border-radius: 10px;
 }
-.container-text p {
+.descripcion .descripcion-section .container-text h1 {
+  padding: 20px 0;
+  border-bottom: 3px solid #EDCB78;
+}
+.descripcion .descripcion-section .container-text h2 {
+  padding: 20px 0;
+  border-bottom: 3px solid #EDCB78;
+}
+.descripcion .descripcion-section .container-text p {
+  padding: 20px 0;
   font-size: 20px;
   color: #fff;
 }
@@ -387,7 +409,10 @@ body {
     font-size: 20px;
   }
   .logo .logo-image img {
-    padding: 10px;
+    background: rgb(237, 203, 120);
+    background: linear-gradient(180deg, rgb(237, 203, 120) 0%, rgb(255, 255, 255) 100%);
+    padding: 20px 10px;
+    border-radius: 0;
   }
   .container-tarjeta {
     display: flex;
@@ -467,6 +492,12 @@ body {
   .navbar .navbar-nav .nav-item .nav-link {
     font-size: 21px;
   }
+  .logo .logo-image img {
+    background: rgb(237, 203, 120);
+    background: linear-gradient(180deg, rgb(237, 203, 120) 0%, rgb(255, 255, 255) 100%);
+    padding: 50px 50px;
+    border-radius: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .md-section {
@@ -511,6 +542,12 @@ body {
   }
   .footer-list .footer-links a {
     font-size: 20px;
+  }
+  .logo .logo-image img {
+    background: rgb(237, 203, 120);
+    background: linear-gradient(180deg, rgb(237, 203, 120) 0%, rgb(255, 255, 255) 100%);
+    padding: 50px 100px;
+    border-radius: 0;
   }
 }
 @media (min-width: 992px) {
