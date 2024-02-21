@@ -1,8 +1,6 @@
 /* pagina de nosotros */
 .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexible;
 }
 
 .md-section {

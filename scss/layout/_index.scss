@@ -5,9 +5,7 @@
     background-position: 0 center;
     background-repeat: repeat-x;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    @include flexible;
     border-top-style: none;
     border-bottom: 4px solid $borderColor;
 
@@ -24,9 +22,7 @@
 .descripcion {
     width: 100%;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexible;
 
     .descripcion-section {
         align-items: center;
@@ -38,9 +34,7 @@
             background: rgb(1, 43, 40);
             color: blanchedalmond;
             text-shadow: 0px 4px 4px black;
-            display: flex;
-            justify-content: center;
-            text-align: center;
+            @include flexible;
             flex-direction: column;
             flex-wrap: wrap;
             margin: 30px 20px;
@@ -63,6 +57,7 @@
                 padding: 20px 0;
                 font-size: 20px;
                 color: #fff;
+                text-align: center;
             }
         }
     }
@@ -70,11 +65,9 @@
 
 .container-tarjeta {
     background-color: $mainColor;
-    display: flex;
+    @include flexible;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     background-size: contain;
     background-repeat: no-repeat;
     border-top: 5px solid $borderColor;
@@ -102,9 +95,7 @@
 
 .logo-contenedor {
     background-color: $mainColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexible;
     padding: 50px 0;
 
     img {
