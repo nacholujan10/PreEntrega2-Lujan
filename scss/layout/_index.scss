@@ -68,14 +68,8 @@
     }
 }
 
-
-
-
-
-
-
-
 .container-tarjeta {
+    background-color: $mainColor;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -83,19 +77,25 @@
     justify-content: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 10px;
-
-    img {
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-    }
+    border-top: 5px solid $borderColor;
 
     .tarjeta {
-        height: 400px;
+        max-width: 300px auto;
+        height: 500px;
         margin: 50px;
         box-shadow: 5px 5px 20px black;
         overflow: hidden;
         border-radius: 10px;
+        border: 8px outset $borderColor;
+
+        img {
+            background-position: 0 center;
+            background-repeat: repeat-x;
+            background-size: auto;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border-radius: 10px;
+        }
     }
 }

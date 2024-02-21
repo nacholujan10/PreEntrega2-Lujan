@@ -237,6 +237,7 @@ body {
 }
 
 .container-tarjeta {
+  background-color: #012B28;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -244,18 +245,24 @@ body {
   justify-content: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 10px;
-}
-.container-tarjeta img {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
+  border-top: 5px solid #EDCB78;
 }
 .container-tarjeta .tarjeta {
-  height: 400px;
+  max-width: 300px auto;
+  height: 500px;
   margin: 50px;
   box-shadow: 5px 5px 20px black;
   overflow: hidden;
+  border-radius: 10px;
+  border: 8px outset #EDCB78;
+}
+.container-tarjeta .tarjeta img {
+  background-position: 0 center;
+  background-repeat: repeat-x;
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -304,6 +311,7 @@ body {
   background-repeat: repeat-x;
   background-size: cover;
   padding: 40px 80px;
+  color: #f3c552;
   width: auto;
   border-left: 5px solid #012B28;
   border-right: 5px solid #012B28;
@@ -314,7 +322,7 @@ body {
   margin: 20px 0;
   background-color: #012B28;
   color: blanchedalmond;
-  border-style: double;
+  border-style: solid;
   border-color: #f3c552;
   padding: 20px 10px;
 }
@@ -421,9 +429,12 @@ body {
     flex-wrap: nowrap;
   }
   .container-tarjeta .tarjeta {
-    margin: 30px;
-    height: 50%;
-    width: auto;
+    margin: 30px 5px;
+    height: 300px;
+    max-width: 250px;
+  }
+  .container-tarjeta .tarjeta img {
+    width: 100% auto;
   }
   .container-fluid .grid-container {
     padding: auto;
@@ -463,10 +474,19 @@ body {
     font-size: 20px;
   }
   .container-tarjeta {
+    margin: 20px 5px;
     display: flex;
     flex-direction: column;
-    align-content: normal;
+    align-content: center;
     flex-wrap: nowrap;
+  }
+  .container-tarjeta .tarjeta {
+    margin: 30px 5px;
+    height: 500px;
+    width: 250px;
+  }
+  .container-tarjeta .tarjeta img {
+    width: 100% auto;
   }
   .navbar .container-fluid {
     height: auto;

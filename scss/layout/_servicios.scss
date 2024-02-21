@@ -6,6 +6,7 @@
     background-repeat: repeat-x;
     background-size: cover;
     padding: 40px 80px;
+    color: #f3c552;
     width: auto;
     border-left: 5px solid #012B28;
     border-right: 5px solid #012B28;
@@ -14,9 +15,9 @@
         font-size: 50px;
         height: 300px;
         margin: 20px 0;
-        background-color: #012B28;
+        background-color: $mainColor;
         color: blanchedalmond;
-        border-style: double;
+        border-style: solid;
         border-color: #f3c552;
         padding: 20px 10px;
 

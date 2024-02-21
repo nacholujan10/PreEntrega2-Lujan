@@ -67,14 +67,14 @@
     .logo {
         .logo-image {
             img {
-                background: rgb(237,203,120);
-background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                background: rgb(237, 203, 120);
+                background: linear-gradient(180deg, rgba(237, 203, 120, 1) 0%, rgba(255, 255, 255, 1) 100%);
                 padding: 20px 10px;
                 border-radius: 0
             }
         }
     }
-    
+
     .container-tarjeta {
         display: flex;
         flex-direction: column;
@@ -82,17 +82,21 @@ background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 
         flex-wrap: nowrap;
 
         .tarjeta {
-            margin: 30px;
-            height: 50%;
-            width: auto;
+            margin: 30px 5px;
+            height: 300px;
+            max-width: 250px;
+
+            img {
+                width: 100% auto;
+            }
         }
 
     }
 
     // propiedades
-    
+
     .container-fluid {
-        .grid-container{
+        .grid-container {
             padding: auto;
             grid-template-columns: repeat(1, 2fr);
 
@@ -101,13 +105,13 @@ background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 
                 padding: 10px;
                 height: fit-content;
 
-                .card-prop-text {   
+                .card-prop-text {
                     h3 {
                         font-size: 25px;
                     }
 
                 }
-                
+
             }
         }
     }
@@ -152,10 +156,22 @@ background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 
     }
 
     .container-tarjeta {
+        margin: 20px 5px;
         display: flex;
         flex-direction: column;
-        align-content: normal;
+        align-content: center;
         flex-wrap: nowrap;
+
+        .tarjeta {
+            margin: 30px 5px;
+            height: 500px;
+            width: 250px;
+
+            img {
+                width: 100% auto;
+            }
+        }
+
     }
 
     .navbar {
@@ -194,14 +210,14 @@ background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 
     .logo {
         .logo-image {
             img {
-                background: rgb(237,203,120);
-background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                background: rgb(237, 203, 120);
+                background: linear-gradient(180deg, rgba(237, 203, 120, 1) 0%, rgba(255, 255, 255, 1) 100%);
                 padding: 50px 50px;
                 border-radius: 0
             }
         }
     }
-    
+
 }
 
 
@@ -268,8 +284,8 @@ background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 
     .logo {
         .logo-image {
             img {
-                background: rgb(237,203,120);
-background: linear-gradient(180deg, rgba(237,203,120,1) 0%, rgba(255,255,255,1) 100%);
+                background: rgb(237, 203, 120);
+                background: linear-gradient(180deg, rgba(237, 203, 120, 1) 0%, rgba(255, 255, 255, 1) 100%);
                 padding: 50px 100px;
                 border-radius: 0
             }
